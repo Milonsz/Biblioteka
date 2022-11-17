@@ -13,15 +13,15 @@
 <body>
 
 <div class="sidenav">
-    <a class="<?= ($_GET['page'] ?? '') == 'Glowna' ? 'active' : '' ?>" href="?page=glowna">Strona główna</a>
-    <a class="<?= ($_GET['page'] ?? '') == 'Test' ? 'active' : '' ?>" href="?page=test">Test połączenia</a>
-    <a class="<?= ($_GET['page'] ?? '') == 'Tabela' ? 'active' : '' ?>" href="?page=tabele">Lista tabel</a>
-    <a class="<?= ($_GET['page'] ?? '') == 'Czytelnicy' ? 'active' : '' ?>" href="?page=czytelnicy">Tabela <i>czytelnicy</i></a>
-    <a class="<?= ($_GET['page'] ?? '') == 'Dzialy' ? 'active' : '' ?>" href="?page=dzialy">Tabela <i>działy</i></a>
-    <a class="<?= ($_GET['page'] ?? '') == 'Ksiazki' ? 'active' : '' ?>" href="?page=ksiazki">Tabela <i>książki</i></a>
-    <a class="<?= ($_GET['page'] ?? '') == 'Pracownicy' ? 'active' : '' ?>" href="?page=pracownicy">Tabela <i>pracownicy</i></a>
-    <a class="<?= ($_GET['page'] ?? '') == 'Stanowiska' ? 'active' : '' ?>" href="?page=stanowiska">Tabela <i>stanowiska</i></a>
-    <a class="<?= ($_GET['page'] ?? '') == 'Wypozyczenia' ? 'active' : '' ?>" href="?page=wypozyczenia">Tabela <i>wypożyczenia</i></a>
+    <a class="<?= ($_GET['page'] ?? '') == 'Glowna' ? 'active' : '' ?>" href="?page=Glowna">Strona główna</a>
+    <a class="<?= ($_GET['page'] ?? '') == 'Test' ? 'active' : '' ?>" href="?page=Test">Test połączenia</a>
+    <a class="<?= ($_GET['page'] ?? '') == 'Tabela' ? 'active' : '' ?>" href="?page=Tabela">Lista tabel</a>
+    <a class="<?= ($_GET['page'] ?? '') == 'Czytelnicy' ? 'active' : '' ?>" href="?page=Czytelnicy">Tabela <i>czytelnicy</i></a>
+    <a class="<?= ($_GET['page'] ?? '') == 'Dzialy' ? 'active' : '' ?>" href="?page=Dzialy">Tabela <i>działy</i></a>
+    <a class="<?= ($_GET['page'] ?? '') == 'Ksiazki' ? 'active' : '' ?>" href="?page=Ksiazki">Tabela <i>książki</i></a>
+    <a class="<?= ($_GET['page'] ?? '') == 'Pracownicy' ? 'active' : '' ?>" href="?page=Pracownicy">Tabela <i>pracownicy</i></a>
+    <a class="<?= ($_GET['page'] ?? '') == 'Stanowiska' ? 'active' : '' ?>" href="?page=Stanowiska">Tabela <i>stanowiska</i></a>
+    <a class="<?= ($_GET['page'] ?? '') == 'Wypozyczenia' ? 'active' : '' ?>" href="?page=Wypozyczenia">Tabela <i>wypożyczenia</i></a>
 </div>
 
 <div class="content">
