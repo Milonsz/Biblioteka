@@ -1,6 +1,6 @@
 <h1>Tabela Ksiazki</h1>
 <?php
-$query = 'SELECT * FROM ksiazki';
+$query = "SELECT * FROM ksiazki";
 $result = mysqli_query($conn, $query);
 
 ?>
@@ -21,7 +21,7 @@ $result = mysqli_query($conn, $query);
     if (mysqli_num_rows($result) > 0) {
         while ($row = mysqli_fetch_assoc($result)) {
             echo '<tr><td style="border: black solid thin">' . $row['Sygnatura']
-                . '</td><td style="border: black solid thin">' . $row['Tytuł']
+                . '</td><td style="border: black solid thin">' . $row['Tytul']
                 . '</td><td style="border: black solid thin">' . $row['Nazwisko']
                 . '</td><td style="border: black solid thin">' . $row['Imie']
                 . '</td><td style="border: black solid thin">' . $row['Wydawnictwo']
