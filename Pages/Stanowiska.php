@@ -1,4 +1,4 @@
-<<h1>Tabela Ksiazki</h1>
+<h1>Tabela Stanowiska</h1>
 <?php
 $query = "SELECT * FROM stanowiska";
 $result = mysqli_query($conn, $query);

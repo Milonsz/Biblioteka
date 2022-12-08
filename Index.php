@@ -7,7 +7,6 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="Style/layout.css">
     <link rel="stylesheet" href="Style/style.css">
-    <link rel="script" href="js/Javascript.js">
     <title>Biblioteka</title>
 </head>
 <?php require 'include/DB_connect.php'; ?>
@@ -37,6 +36,9 @@
     }
     ?>
 </div>
+
+
+<script src="js/Javascript.js"></script>
 
 </body>
 <?php require 'include/DB_disconnect.php'; ?>
