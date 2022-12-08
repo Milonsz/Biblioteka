@@ -1,7 +1,3 @@
-<?php
-    $database=$biblioteka;
-    $user=$localhost;
-?>
 <h1>Test połączenia z serwerem <i><?= $user ?></i> i bazą <i><?= $database ?></i></h1>
 <p>
     <?php
