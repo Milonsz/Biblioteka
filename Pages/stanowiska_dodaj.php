@@ -1,6 +1,20 @@
 <h1>Nowe dane tabeli <i>stanowiska</i></h1>
 <?php
-if ($_SERVER["REQUEST_METHOD"] == "POST"){}
+if ($_SERVER["REQUEST_METHOD"] == "POST")   {
+    $Nazwa = $_POST['Nazwa'] ? htmlspecialchars(trim($_POST['Nazwa'])) : '';
+
+    $query = sprintf("INSERT INTO `stanowiska` (Nazwa) VALUES ('%s');",
+        mysqli_real_escape_string($mysqliProceduralConnection, $Nazwa)
+    );
+
+    if (mysqli_query($mysqliProceduralConnection, $query))
+    {
+        echo '<h4 class=success">Nowe dane zostały dodane</h4>';
+    }   else    {
+        echo '<h4 class="failure">Błąd w czasie dodawania:</h4><br>'
+        . mysqli_error($mysqliProceduralConnection);
+    }
+}
 else
 {
   ?>
