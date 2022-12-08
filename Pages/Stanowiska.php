@@ -9,6 +9,7 @@ $result = mysqli_query($conn, $query);
         <th style="border: black solid thin">ID stanowiska</th>
         <th style="border: black solid thin">Nazwa</th>
         <th style="border: black solid thin"><a href="?page=stanowiska_dodaj">dodaj</a></th>
+        <th style="border: black solid thin"><a href="?page=stanowiska_usun">usuń</a></th>
     </tr>
 <?php
 if (mysqli_num_rows($result) > 0) {

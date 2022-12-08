@@ -4,15 +4,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")   {
     $Nazwa = $_POST['Nazwa'] ? htmlspecialchars(trim($_POST['Nazwa'])) : '';
 
     $query = sprintf("INSERT INTO `stanowiska` (Nazwa) VALUES ('%s');",
-        mysqli_real_escape_string($mysqliProceduralConnection, $Nazwa)
+        mysqli_real_escape_string($conn, $Nazwa)
     );
 
-    if (mysqli_query($mysqliProceduralConnection, $query))
+    if (mysqli_query($conn, $query))
     {
         echo '<h4 class=success">Nowe dane zostały dodane</h4>';
     }   else    {
         echo '<h4 class="failure">Błąd w czasie dodawania:</h4><br>'
-        . mysqli_error($mysqliProceduralConnection);
+        . mysqli_error($conn);
     }
 }
 else
@@ -26,7 +26,7 @@ else
                 </tr>
                 <tr>
                     <td><label for="Nazwa">Nazwa</label></td>
-                    <td><input disabled id="Nazwa" name="Nazwa" type="text"></td>
+                    <td><input id="Nazwa" name="Nazwa" type="text"></td>
                 </tr>
                 <tr>
                     <td colspan="2" style="text-align: center;"><input type="submit" value="dodaj"></td>
